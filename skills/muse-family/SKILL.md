@@ -3,7 +3,7 @@ name: muse-family
 description: "把学校邮件/PDF/活动整合成家庭日历，处理报名、接送冲突、家庭提醒与共同计划。"
 metadata:
   category: productivity
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # 家庭日历与孩子事务

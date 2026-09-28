@@ -63,6 +63,6 @@ node install.mjs uninstall
 
 ## 从 v0.1.0 更新到 v0.2.0
 
-安装命令不变。v0.2.0 更新 muse-money、muse-connect 和 muse-inbox；只更新技能文件，不读写历史账单或账户配置。
+安装命令不变。v0.2.0 更新 muse-money、muse-connect 和 muse-inbox，并修复 muse-family、muse-learn 的脚本路径入口；只更新技能文件，不读写历史账单或账户配置。
 
 订阅审计脚本输入升级为 schema v2：旧 active/cancelled 无法证明当前自动续费，因此旧 JSON 不会被默默兼容或自动迁移。重新审计时先读 muse-money 的 references/data-contract.md，保留原快照，用实际证据生成新输入和报告；证据缺失则留待核实。技能安装成功不能算历史审计已纠正。

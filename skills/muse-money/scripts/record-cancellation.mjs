@@ -37,4 +37,4 @@ async function main() {
   } catch(e) { await fs.rm(dir,{recursive:true,force:true}); throw e; }
   console.log(JSON.stringify({recorded_subscription_id:evidence.subscription_id,output_directory:path.resolve(dir),remote_action_performed:false}));
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e.message);process.exitCode=1;});
+if(process.argv[1]&&await fs.realpath(process.argv[1]).catch(()=>null)===await fs.realpath(fileURLToPath(import.meta.url)))main().catch(e=>{console.error(e.message);process.exitCode=1;});

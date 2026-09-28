@@ -36,4 +36,4 @@ export function calendar(input){
   lines.push('END:VCALENDAR');return lines.map(fold).join('\r\n')+'\r\n';
 }
 async function main(){const[i,o]=process.argv.slice(2);if(!i||!o)throw Error('Usage: node calendar.mjs input.json output.ics');await fs.writeFile(o,calendar(JSON.parse(await fs.readFile(i,'utf8'))));}
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e.message);process.exitCode=1;});
+if(process.argv[1]&&await fs.realpath(process.argv[1]).catch(()=>null)===await fs.realpath(fileURLToPath(import.meta.url)))main().catch(e=>{console.error(e.message);process.exitCode=1;});

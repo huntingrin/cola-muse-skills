@@ -3,7 +3,7 @@ name: muse-learn
 description: "把目标变成每日可执行任务，创建复习/练习安排、儿童学习材料和进度回顾。"
 metadata:
   category: productivity
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # 学习与长期计划

@@ -127,4 +127,4 @@ async function main() {
   const dataDir=await resolveDataDir(explicit);
   console.log(JSON.stringify(await operate(action,dataDir,{dryRun}),null,2));
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch(e=>{console.error(e.message);process.exitCode=1;});
+if (process.argv[1] && await fs.realpath(process.argv[1]).catch(()=>null) === await fs.realpath(fileURLToPath(import.meta.url))) main().catch(e=>{console.error(e.message);process.exitCode=1;});

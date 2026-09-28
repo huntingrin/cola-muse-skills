@@ -4,10 +4,10 @@
 
 ## v0.2.0 当前验证
 
-- 35 项本地自动测试通过：10 项安装器、6 项日历/计划、19 项订阅证据与账本回归。
-- 25 个技能结构和文件校验通过；3 个修改技能通过 skill-creator 元信息检查。
+- 36 项本地自动测试通过：11 项安装器、6 项日历/计划、19 项订阅证据与账本回归。
+- 25 个技能结构和文件校验通过；5 个修改技能通过 skill-creator 元信息检查。
 - 合成输入经过审计 CLI 和取消记录 CLI，确认税费、下一期价格、未知字段、续费关闭与剩余权益，输出见 [v0.2.0 回归产物](../eval/results/v0.2.0-deterministic)。
-- 跨平台结果查看 [GitHub Actions](https://github.com/huntingrin/cola-muse-skills/actions)。Windows 跳过符号链接权限测试。
+- 跨平台结果查看 [GitHub Actions](https://github.com/huntingrin/cola-muse-skills/actions)。Windows 跳过 2 项需要符号链接权限的测试。
 - **本版尚未重跑 Cola 模型端到端或真实账号测试。** 用户提供的旧版真实对话用于定位问题，不能算新版通过。连接与沟通类指令变化仅做了文档审阅。
 - 修复范围与限制见 [v0.2.0 更新说明](changes-0.2.0.md)。
 

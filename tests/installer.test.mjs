@@ -32,3 +32,11 @@ test('failed update rolls back previously replaced skill directories',async t=>{
  assert.equal((await fs.readdir(path.join(dir,'skills'))).some(x=>x.startsWith('.cola-muse')),false);
 });
 test('symlink destination never follows or deletes external files',{skip:process.platform==='win32'},async t=>{const dir=await temporary(t),external=path.join(dir,'external');await fs.mkdir(external);await fs.writeFile(path.join(external,'keep'),'keep');await fs.mkdir(path.join(dir,'data','skills'),{recursive:true});await fs.symlink(external,path.join(dir,'data','skills','muse-money'));await assert.rejects(operate('install',path.join(dir,'data')),/符号链接/);assert.equal(await fs.readFile(path.join(external,'keep'),'utf8'),'keep');});
+test('installer and all helper CLIs execute through directory aliases instead of silently exiting',{skip:process.platform==='win32'},async t=>{
+ const {execFile}=await import('node:child_process');const {promisify}=await import('node:util');const exec=promisify(execFile);
+ const dir=await temporary(t),alias=path.join(dir,'alias');await fs.symlink(root,alias);
+ const installer=await exec(process.execPath,[path.join(alias,'install.mjs'),'--help']);assert.match(installer.stdout,/install\|doctor\|uninstall/);
+ for(const relative of ['skills/muse-money/scripts/audit-subscriptions.mjs','skills/muse-money/scripts/record-cancellation.mjs','skills/muse-family/scripts/calendar.mjs','skills/muse-learn/scripts/plan.mjs']){
+  await assert.rejects(exec(process.execPath,[path.join(alias,relative)]),e=>e.code===1 && /Usage:/.test(e.stderr));
+ }
+});

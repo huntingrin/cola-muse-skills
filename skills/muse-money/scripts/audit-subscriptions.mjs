@@ -177,4 +177,4 @@ async function main() {
   await fs.writeFile(o,JSON.stringify(result,null,2)+'\n');
   if (report) await fs.writeFile(report,renderReport(result));
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e.message);process.exitCode=1;});
+if(process.argv[1]&&await fs.realpath(process.argv[1]).catch(()=>null)===await fs.realpath(fileURLToPath(import.meta.url)))main().catch(e=>{console.error(e.message);process.exitCode=1;});

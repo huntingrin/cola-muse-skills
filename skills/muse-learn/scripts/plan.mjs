@@ -24,4 +24,4 @@ export function plan(input){
   return {schema_version:1,total_minutes:total,capacity_minutes:capacity,buffer_minutes:capacity-total,daily_budget:input.daily_minutes,days};
 }
 async function main(){const[i,o]=process.argv.slice(2);if(!i||!o)throw Error('Usage: node plan.mjs input.json output.json');await fs.writeFile(o,JSON.stringify(plan(JSON.parse(await fs.readFile(i,'utf8'))),null,2)+'\n');}
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e.message);process.exitCode=1;});
+if(process.argv[1]&&await fs.realpath(process.argv[1]).catch(()=>null)===await fs.realpath(fileURLToPath(import.meta.url)))main().catch(e=>{console.error(e.message);process.exitCode=1;});

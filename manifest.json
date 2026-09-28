@@ -43,8 +43,8 @@
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
         "references/data-contract.md": "122cc2c0d26816620d969057f37105230b8a0f93216bc44fc6b35ea1f192df79",
-        "scripts/calendar.mjs": "048444234ce3f9405a22ced232f5bc6f77c12218bd3c5adfaefddec7ac958827",
-        "SKILL.md": "1668b3444dc8e577b200e2b4c84d52891e856d014e34c552574c002b17f5d904"
+        "scripts/calendar.mjs": "6c72edaace7d869324b5639e876c1612ed45ee7b594b893cc20b4301dd9b9534",
+        "SKILL.md": "423f39a0121d6b008e70116dadab3ac93e55cfce90e3dd920136c9fc4d1b1e68"
       }
     },
     {
@@ -87,8 +87,8 @@
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
         "references/data-contract.md": "1e03cf4d49a60084157d9c0f017df59101be59a042052858e50c01a1513bd6ce",
-        "scripts/plan.mjs": "901014106733eafa44659cdbb3e4dd334a7fd7f3fa34fd7d1a2798283edaa908",
-        "SKILL.md": "faa4c018cb91ea54ac68f454e6a4b09892f658dd2cb004d438fef1c2b17ffcc2"
+        "scripts/plan.mjs": "1d6e96e9165a2f75f16536fcdbe538f36cf9da3ceceeff162f017e62c4712b20",
+        "SKILL.md": "fbf44abf95488e5f2e8daaf38c0072797ab5631f8a0a99e16d5ec5a6afad993c"
       }
     },
     {
@@ -117,8 +117,8 @@
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
         "references/data-contract.md": "65425501f796effde0e82197e11c2761766fbb85d78bec5e582f1682eac004b5",
-        "scripts/audit-subscriptions.mjs": "c606998c142ed624299d7b3f7bf7b829ec8a6c77d79f23c7f03c158608f40949",
-        "scripts/record-cancellation.mjs": "2c24262fbf356e3b9ff800966fca77484429dac4c8a8216da2724505584a451b",
+        "scripts/audit-subscriptions.mjs": "2dd70da35b3f562058edf7b278e8a99f891f0d80dfb48def3216028a0905ab77",
+        "scripts/record-cancellation.mjs": "6d7c606d1ad8942aa22d10fd117d2fa6afcedceab804b497aefc436f4bb46f18",
         "SKILL.md": "f5f975851db503e3c11196029929a75a09390b20bea8b38820fdbe401c7e4dd5"
       }
     },

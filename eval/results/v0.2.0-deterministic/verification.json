@@ -1,7 +1,7 @@
 {
   "pack_version": "0.2.0",
   "scope": "deterministic synthetic CLI regression; no model, mailbox or merchant called",
-  "automatic_tests": 35,
+  "automatic_tests": 36,
   "subscription_tests": 19,
   "cola_model_rerun": false,
   "live_account_rerun": false,
@@ -24,5 +24,20 @@
     "after/subscriptions.json": "fe1c65270fa0db3b04e8ccbe7f0dbfaf77ecdd026134b6f89d927a7f8f05770d",
     "after/audit-result.json": "fed286b3fca4b8209ab04e1802632da3ff667e24096494486b42a050917ebc74",
     "after/report.md": "08033c81f27f8ca1aec4cf9b3631f0eb72078105d9bde0c313e8cac138aad723"
+  },
+  "upgrade_smoke": {
+    "upgrade_from": "official v0.1.0 archive",
+    "upgrade_to": "0.2.0",
+    "changed_skills": [
+      "muse-connect",
+      "muse-family",
+      "muse-inbox",
+      "muse-learn",
+      "muse-money"
+    ],
+    "installed": 25,
+    "unrelated_preserved": true,
+    "uninstall": "pass",
+    "legacy_install_invocation": "cwd-relative per INSTALL.md"
   }
 }
