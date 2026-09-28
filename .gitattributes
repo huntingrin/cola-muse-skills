@@ -1,0 +1,3 @@
+# Keep the bytes used by manifest.json identical on every platform.
+* text=auto eol=lf
+*.ics -text
