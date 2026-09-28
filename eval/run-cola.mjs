@@ -16,9 +16,15 @@ if(marker.output_dir!==out||marker.browser_disabled!==true||marker.channels_disa
 if(await fs.realpath(path.join(data,'skills'))!==await fs.realpath(path.join(out,'skills')))throw Error('Skills must resolve inside the fixture tool root');
 const base=`这是隔离的离线合成资料测试。只读取 ${out} 内的素材和技能，不读取真实账号、邮箱或其他个人资料，不用网络，不发送消息，不创建定时任务，不启动子代理。node 位于 ${opts['node-bin']}。完成实际文件交付并检查结果，不要只给建议。`;
 const definitions={
- money:{file:'audit.json',skill:'muse-money',prompt:`请使用 muse-money 审计 ${out}/fixtures/receipts.txt。把归一化输入写到 ${out}/subscriptions.json，使用技能脚本生成 ${out}/audit.json，再用中文总结。`,check:r=>{
-  const expected={music:[18000,'annual','active',true],ai:[2000,'monthly','active',true],stream:[990,'monthly','cancelled',false],compute:[450,'usage','active',false],unknown:[500,'monthly','unknown',false]};
-  return r.by_currency?.CNY?.annual_cents===42000&&r.by_currency.CNY.monthly_equivalent_cents===3500&&r.items?.length===5&&new Set(r.items.map(x=>x.id)).size===5&&r.items.every(x=>x.currency==='CNY'&&JSON.stringify([x.amount_cents,x.interval,x.status,x.included])===JSON.stringify(expected[x.id]))&&r.needs_review?.length===1&&r.needs_review[0]==='unknown';
+ money:{file:'audit.json',skill:'muse-money',prompt:`请使用 muse-money v2 审计 ${out}/fixtures/receipts.txt。规范化输入写到 ${out}/subscriptions.json；用技能脚本同时生成 ${out}/audit.json 和 ${out}/report.md，再用中文简短总结。`,check:r=>{
+  const rows=Object.fromEntries((r.items??[]).map(x=>[x.id,x]));
+  return r.schema_version===2 && r.by_currency?.CNY?.annual_cents===42000 && r.by_currency.CNY.monthly_equivalent_cents===3500 && Object.keys(r.by_currency).length===1 && r.items.length===5 && Object.keys(rows).length===5 && r.items.every(x=>x.currency==='CNY')
+   && rows.music?.amount_cents===18000 && rows.music.interval==='annual' && rows.music.included===true && rows.music.effective_renewal.status==='enabled'
+   && rows.ai?.amount_cents===2000 && rows.ai.interval==='monthly' && rows.ai.included===true && rows.ai.effective_renewal.status==='enabled'
+   && rows.stream?.effective_renewal.status==='disabled' && rows.stream.included===false && rows.stream.access_state==='paid_period_remaining'
+   && rows.compute?.interval==='usage' && rows.compute.included===false && rows.compute.last_payment?.amount_cents===450
+   && rows.unknown?.effective_renewal.status==='unknown' && rows.unknown.included===false && rows.unknown.last_payment?.amount_cents===500
+   && rows.unknown.amount_cents===null && rows.unknown.rate_evidence===null && r.upcoming_charges?.length===0;
  }},
  calendar:{file:'school.ics',skill:'muse-family',prompt:`请把 ${out}/fixtures/school.txt 的通知整理成可导入的 ${out}/school.ics，保留改期和取消状态。请自动选用这套已安装的 Muse 技能中合适的技能，读取并执行其流程，使用附带的日历脚本。归一化输入保存为 ${out}/calendar-input.json。不要真的导入任何日历。`,check:s=>{
   const blocks=s.replace(/\r\n /g,'').split('BEGIN:VEVENT\r\n').slice(1);

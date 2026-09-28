@@ -1,0 +1,28 @@
+{
+  "pack_version": "0.2.0",
+  "scope": "deterministic synthetic CLI regression; no model, mailbox or merchant called",
+  "automatic_tests": 35,
+  "subscription_tests": 19,
+  "cola_model_rerun": false,
+  "live_account_rerun": false,
+  "fixtures": [
+    "eval/fixtures/subscriptions-v2.json",
+    "eval/fixtures/cancellation-v2.json"
+  ],
+  "checks": {
+    "before_CNY_annual_cents": 24000,
+    "before_USD_annual_cents": 21800,
+    "after_CNY_included": false,
+    "after_USD_annual_cents": 21800,
+    "cancelled_item_renewal": "disabled",
+    "cancelled_item_access": "paid_period_remaining",
+    "upcoming_after": 0
+  },
+  "sha256": {
+    "before.json": "59cef2019deb2f5502a76aad32a2821db945d37b24190028c66754ae50731f6b",
+    "before.md": "592e3c073e363a028250a29e5b1f31c65f7153c871b6fc55afe45dbc3a39d30d",
+    "after/subscriptions.json": "fe1c65270fa0db3b04e8ccbe7f0dbfaf77ecdd026134b6f89d927a7f8f05770d",
+    "after/audit-result.json": "fed286b3fca4b8209ab04e1802632da3ff667e24096494486b42a050917ebc74",
+    "after/report.md": "08033c81f27f8ca1aec4cf9b3631f0eb72078105d9bde0c313e8cac138aad723"
+  }
+}

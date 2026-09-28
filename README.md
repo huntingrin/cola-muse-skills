@@ -85,6 +85,8 @@ Cola 会下载文件、执行安装并检查结果。正常情况下应显示 **
 
 ## 怎么更新、卸载
 
+**v0.2.0 更新：**订阅审计现在区分历史付款、自动续费和剩余权益，支持未知金额/周期，并在取消后生成新的账本和报告。旧审计文件不会自动改写；重新审计时按新格式核实证据。详见 [更新说明](docs/changes-0.2.0.md)。
+
 更新时发给 Cola：
 
 ```text
@@ -116,11 +118,11 @@ Cola 会下载文件、执行安装并检查结果。正常情况下应显示 **
 
 ## 给开发者
 
-无 npm 依赖。安装器与三个确定性工具使用 Node.js 18+；无需运行 `npm install`。
+无 npm 依赖。安装器与确定性工具使用 Node.js 18+；无需运行 `npm install`。
 
 ```sh
 node scripts/validate.mjs
-node --test tests/installer.test.mjs tests/workflows.test.mjs
+npm test
 node install.mjs install --data-dir /path/to/test-cola --dry-run
 ```
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "huntingrin/cola-muse-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "skills": [
     {
       "name": "muse-admin",
@@ -28,7 +28,7 @@
       "name": "muse-connect",
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
-        "SKILL.md": "5ccbee8bb2f56b0bc56e19fefcb78ac045a743b724bb03468b340c2df8e7643d"
+        "SKILL.md": "2a9bc7002bd788c21e25688f275c0075cf60476f998f9b9a34c2fee9741c5dc7"
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "muse-inbox",
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
-        "SKILL.md": "ed88a1a44bb5904e7b66aa33380462856495a64e82880c6d62add63f1eba4406"
+        "SKILL.md": "c42ecba1d22d2e89de05df8ca1ed6d121be239fa5b0b4aca06debf30c5cc0863"
       }
     },
     {
@@ -116,9 +116,10 @@
       "name": "muse-money",
       "files": {
         "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
-        "references/data-contract.md": "c2eba7203ee8a7cdcabfc31dc8325672959a83bf6fd2dfebfe31502f6f8c06af",
-        "scripts/audit-subscriptions.mjs": "e7a41addf7ea2f417d7efe32d4dc6a1debd3e0ab4209c3399622cb2e53a35e6e",
-        "SKILL.md": "a6843c7ec9f86529216920af0f0a9f932836a80368be3129dfb151f55d7e93e5"
+        "references/data-contract.md": "65425501f796effde0e82197e11c2761766fbb85d78bec5e582f1682eac004b5",
+        "scripts/audit-subscriptions.mjs": "c606998c142ed624299d7b3f7bf7b829ec8a6c77d79f23c7f03c158608f40949",
+        "scripts/record-cancellation.mjs": "2c24262fbf356e3b9ff800966fca77484429dac4c8a8216da2724505584a451b",
+        "SKILL.md": "f5f975851db503e3c11196029929a75a09390b20bea8b38820fdbe401c7e4dd5"
       }
     },
     {

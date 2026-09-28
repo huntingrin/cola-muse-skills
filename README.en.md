@@ -85,6 +85,8 @@ See the [skill directory](docs/skills.md) for names and examples. Skill instruct
 
 ## Update or uninstall
 
+**New in v0.2.0:** Subscription audits separate past payments, auto-renewal settings, and remaining paid access. Unknown amounts and billing periods stay unknown. After a verified cancellation, a new ledger and report are generated together. Existing audit files are not automatically rewritten; a fresh audit requires the v2 evidence format. See the [release changes](docs/changes-0.2.0.md).
+
 To update, tell Cola:
 
 ```text
@@ -116,11 +118,11 @@ For more detail, see the [installation instructions](INSTALL.md) and [test resul
 
 ## For developers
 
-There are no npm dependencies. The installer and three deterministic tools require Node.js 18+. You do not need to run `npm install`.
+There are no npm dependencies. The installer and deterministic tools require Node.js 18+. You do not need to run `npm install`.
 
 ```sh
 node scripts/validate.mjs
-node --test tests/installer.test.mjs tests/workflows.test.mjs
+npm test
 node install.mjs install --data-dir /path/to/test-cola --dry-run
 ```
 

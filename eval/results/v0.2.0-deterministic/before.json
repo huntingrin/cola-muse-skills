@@ -1,0 +1,311 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-09-28T12:00:00+08:00",
+  "max_status_age_days": 30,
+  "coverage": {
+    "start": "2025-08-28",
+    "end_exclusive": "2026-09-29",
+    "sources": [
+      {
+        "id": "synthetic-file",
+        "kind": "file",
+        "complete": true
+      }
+    ],
+    "limitations": [],
+    "status": "complete_for_declared_sources",
+    "issues": []
+  },
+  "method": "Account-verified renewal only; gross current rates annualized, not cash flow, a future charge forecast, or realized savings. Evidence references are assertions to review, not independently authenticated by this script.",
+  "by_currency": {
+    "CNY": {
+      "annual_cents": 24000,
+      "monthly_equivalent_cents": 2000
+    },
+    "USD": {
+      "annual_cents": 21800,
+      "monthly_equivalent_cents": 1817
+    }
+  },
+  "upcoming_window": {
+    "start": "2026-09-28",
+    "end_exclusive": "2026-10-28"
+  },
+  "upcoming_charges": [
+    {
+      "id": "monthly",
+      "name": "Demo monthly",
+      "currency": "CNY",
+      "date": "2026-10-17",
+      "gross_amount_cents": 2800,
+      "ref": "fixture/monthly/new-price"
+    }
+  ],
+  "items": [
+    {
+      "id": "monthly",
+      "name": "Demo monthly",
+      "currency": "CNY",
+      "amount_cents": 2000,
+      "amount_basis": "gross",
+      "tax_cents": null,
+      "interval": "monthly",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": {
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/monthly/rate"
+      },
+      "access_until": "2026-11-01",
+      "last_payment": {
+        "date": "2026-09-01",
+        "amount_cents": 2000,
+        "amount_basis": "gross",
+        "tax_cents": null,
+        "ref": "fixture/monthly/receipt"
+      },
+      "next_charge": {
+        "date": "2026-10-17",
+        "amount_cents": 2800,
+        "amount_basis": "gross",
+        "tax_cents": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/monthly/new-price"
+      },
+      "renewal_observations": [
+        {
+          "status": "enabled",
+          "source": "account",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/monthly/account"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "enabled",
+        "reason": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/monthly/account"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": 2000,
+      "included": true,
+      "annual_cents": 24000,
+      "review_reasons": []
+    },
+    {
+      "id": "annual-tax",
+      "name": "Demo annual-tax",
+      "currency": "USD",
+      "amount_cents": 20000,
+      "amount_basis": "net",
+      "tax_cents": 1800,
+      "interval": "annual",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": {
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/annual-tax/rate"
+      },
+      "access_until": "2026-11-01",
+      "last_payment": null,
+      "next_charge": null,
+      "renewal_observations": [
+        {
+          "status": "enabled",
+          "source": "account",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/annual-tax/account"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "enabled",
+        "reason": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/annual-tax/account"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": 21800,
+      "included": true,
+      "annual_cents": 21800,
+      "review_reasons": []
+    },
+    {
+      "id": "period-unknown",
+      "name": "Demo period-unknown",
+      "currency": "USD",
+      "amount_cents": 4050,
+      "amount_basis": "gross",
+      "tax_cents": null,
+      "interval": "unknown",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": {
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/period-unknown/rate"
+      },
+      "access_until": "2026-11-01",
+      "last_payment": null,
+      "next_charge": null,
+      "renewal_observations": [
+        {
+          "status": "enabled",
+          "source": "account",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/period-unknown/account"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "enabled",
+        "reason": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/period-unknown/account"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": 4050,
+      "included": false,
+      "annual_cents": null,
+      "review_reasons": [
+        "interval_unknown"
+      ]
+    },
+    {
+      "id": "price-unknown",
+      "name": "Demo price-unknown",
+      "currency": "CNY",
+      "amount_cents": null,
+      "amount_basis": "gross",
+      "tax_cents": null,
+      "interval": "monthly",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": null,
+      "access_until": "2026-11-01",
+      "last_payment": null,
+      "next_charge": null,
+      "renewal_observations": [
+        {
+          "status": "enabled",
+          "source": "account",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/price-unknown/account"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "enabled",
+        "reason": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/price-unknown/account"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": null,
+      "included": false,
+      "annual_cents": null,
+      "review_reasons": [
+        "gross_amount_unknown",
+        "current_rate_unverified"
+      ]
+    },
+    {
+      "id": "receipt-only",
+      "name": "Demo receipt-only",
+      "currency": "CNY",
+      "amount_cents": 1000,
+      "amount_basis": "gross",
+      "tax_cents": null,
+      "interval": "monthly",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": null,
+      "access_until": "2026-11-01",
+      "last_payment": {
+        "date": "2026-09-01",
+        "amount_cents": 1000,
+        "amount_basis": "gross",
+        "tax_cents": null,
+        "ref": "fixture/receipt-only/receipt"
+      },
+      "next_charge": null,
+      "renewal_observations": [
+        {
+          "status": "enabled",
+          "source": "receipt",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/old-receipt"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "unknown",
+        "reason": "renewal_not_account_verified",
+        "observed_at": "2026-09-28T12:00:00+08:00"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": 1000,
+      "included": false,
+      "annual_cents": null,
+      "review_reasons": [
+        "renewal_not_account_verified",
+        "current_rate_unverified"
+      ]
+    },
+    {
+      "id": "already-disabled",
+      "name": "Demo already-disabled",
+      "currency": "CNY",
+      "amount_cents": 9000,
+      "amount_basis": "gross",
+      "tax_cents": null,
+      "interval": "annual",
+      "source_ids": [
+        "synthetic-file"
+      ],
+      "rate_evidence": {
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/already-disabled/rate"
+      },
+      "access_until": "2026-11-01",
+      "last_payment": {
+        "date": "2026-09-01",
+        "amount_cents": 9000,
+        "amount_basis": "gross",
+        "tax_cents": null,
+        "ref": "fixture/already-disabled/receipt"
+      },
+      "next_charge": null,
+      "renewal_observations": [
+        {
+          "status": "disabled",
+          "source": "cancellation_confirmation",
+          "observed_at": "2026-09-28T12:00:00+08:00",
+          "ref": "fixture/cancelled"
+        }
+      ],
+      "review_notes": [],
+      "effective_renewal": {
+        "status": "disabled",
+        "reason": null,
+        "observed_at": "2026-09-28T12:00:00+08:00",
+        "ref": "fixture/cancelled"
+      },
+      "access_state": "paid_period_remaining",
+      "gross_amount_cents": 9000,
+      "included": false,
+      "annual_cents": null,
+      "review_reasons": []
+    }
+  ],
+  "needs_review": [
+    "period-unknown",
+    "price-unknown",
+    "receipt-only"
+  ]
+}

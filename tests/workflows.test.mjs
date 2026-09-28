@@ -1,12 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {audit} from '../skills/muse-money/scripts/audit-subscriptions.mjs';
 import {calendar} from '../skills/muse-family/scripts/calendar.mjs';
 import {plan} from '../skills/muse-learn/scripts/plan.mjs';
-const sub=(id,amount,interval='monthly',status='active',currency='CNY')=>({id,name:id,amount_cents:amount,interval,status,currency});
-test('zero- and three-decimal currencies cannot silently use cents',()=>{for(const currency of ['JPY','KWD'])assert.throws(()=>audit({subscriptions:[sub('a',100,'monthly','active',currency)]}),/currency/);});
-test('subscription costs annualize then round once; cancelled, usage and unknown excluded',()=>{const result=audit({subscriptions:[sub('a',2000),sub('b',18000,'annual'),sub('c',990,'monthly','cancelled'),sub('d',450,'usage'),sub('e',500,'monthly','unknown'),sub('usd',1000,'monthly','active','USD'),sub('a',2000)]});assert.deepEqual(result.by_currency,{CNY:{annual_cents:42000,monthly_equivalent_cents:3500},USD:{annual_cents:12000,monthly_equivalent_cents:1000}});assert.deepEqual(result.needs_review,['e']);assert.equal(result.items.length,6);});
-test('financial ambiguity and unsafe amounts fail explicitly',()=>{assert.throws(()=>audit({subscriptions:[sub('a',1),sub('a',2)]}),/Conflicting/);assert.throws(()=>audit({subscriptions:[sub('a',1.5)]}),/Invalid/);assert.throws(()=>audit({subscriptions:[sub('a',Number.MAX_SAFE_INTEGER)]}),/safe integer/);assert.throws(()=>audit({subscriptions:[sub('a',100,'weekly')]}),/Invalid/);});
 const event={id:'e1',summary:'排练',start:'2026-10-01T17:00:00+08:00',end:'2026-10-01T18:00:00+08:00'};
 const cal=events=>calendar({namespace:'school',exported_at:'2026-09-28T09:00:00+08:00',events});
 test('calendar timezone conversion and stable UID support revisions',()=>{const a=cal([event]),b=cal([{...event,start:'2026-10-01T19:00:00+08:00',end:'2026-10-01T20:00:00+08:00',sequence:1}]);assert.match(a,/DTSTART:20261001T090000Z/);assert.equal(a.match(/UID:([^\r]+)/)[1],b.match(/UID:([^\r]+)/)[1]);assert.match(b,/SEQUENCE:1/);});

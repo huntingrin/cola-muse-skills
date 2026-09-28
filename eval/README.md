@@ -13,7 +13,7 @@
 
 ```sh
 node scripts/validate.mjs
-node --test tests/installer.test.mjs tests/workflows.test.mjs
+npm test
 ```
 
 CI 在 macOS、Windows、Linux 的 Node 20/22 上执行这些检查。CI 不运行付费模型，也不使用用户账号。平台通过情况以具体 Actions 运行结果为准。
