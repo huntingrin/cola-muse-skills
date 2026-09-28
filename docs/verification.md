@@ -14,6 +14,8 @@
 
 详细机器可读结果和合成产物见 [eval/results](../eval/results)。公共文件不包含原始模型对话、账号凭证、个人邮件或浏览器 profile。
 
+跨平台 CI：[6 个环境全部通过](https://github.com/huntingrin/cola-muse-skills/actions/runs/36401886147)（macOS、Linux、Windows × Node 20/22；Windows 跳过需特殊权限的符号链接测试）。首轮真实账号测试按 [邮箱与日历操作指南](../eval/live-mail-calendar.md) 执行，当前待连接专用测试账号。
+
 ## 三个 Cola 实际调用场景
 
 | 场景 | 独立验收 | 没有验证什么 |
