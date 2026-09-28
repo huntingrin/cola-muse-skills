@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "repository": "huntingrin/cola-muse-skills",
+  "version": "0.1.0",
+  "skills": [
+    {
+      "name": "muse-admin",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "b707f2c6ab7c4b3460cf9901e4224d48d44645cd6992d30813d399db45027000"
+      }
+    },
+    {
+      "name": "muse-bills",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "98634e7697e297d35f78d4623c9069603e2d6fdeb619320b1a98f3f9eb2cd43c"
+      }
+    },
+    {
+      "name": "muse-build",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "149750bc35ffb0b0a9f8dc60409b8837d2a91be086879b8a8c80b3c21c5c5e70"
+      }
+    },
+    {
+      "name": "muse-connect",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "5ccbee8bb2f56b0bc56e19fefcb78ac045a743b724bb03468b340c2df8e7643d"
+      }
+    },
+    {
+      "name": "muse-events",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "6703d5719d028c41e82ff0bf545df9458e28522c994412a9c722206088b6a2b8"
+      }
+    },
+    {
+      "name": "muse-family",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "references/data-contract.md": "122cc2c0d26816620d969057f37105230b8a0f93216bc44fc6b35ea1f192df79",
+        "scripts/calendar.mjs": "048444234ce3f9405a22ced232f5bc6f77c12218bd3c5adfaefddec7ac958827",
+        "SKILL.md": "1668b3444dc8e577b200e2b4c84d52891e856d014e34c552574c002b17f5d904"
+      }
+    },
+    {
+      "name": "muse-finance",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "5f23afc6b137bf40f35e45adaa7ed09578ce69ba6d1b42ee2ab36451a37d8cce"
+      }
+    },
+    {
+      "name": "muse-health",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "647a304de76585442694d0e8f0f317f5b54f990faa3ef9c02fc04e2bdddc3621"
+      }
+    },
+    {
+      "name": "muse-home",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "fa7afa180a9587264a4db64a5e23aea831c93f5978be4657f91f2e6037f84713"
+      }
+    },
+    {
+      "name": "muse-inbox",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "ed88a1a44bb5904e7b66aa33380462856495a64e82880c6d62add63f1eba4406"
+      }
+    },
+    {
+      "name": "muse-insurance",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "8f91df6940babce27ac3a5ed3c618d98fde29a2120e32c5ad17d6f5431da17d9"
+      }
+    },
+    {
+      "name": "muse-learn",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "references/data-contract.md": "1e03cf4d49a60084157d9c0f017df59101be59a042052858e50c01a1513bd6ce",
+        "scripts/plan.mjs": "901014106733eafa44659cdbb3e4dd334a7fd7f3fa34fd7d1a2798283edaa908",
+        "SKILL.md": "faa4c018cb91ea54ac68f454e6a4b09892f658dd2cb004d438fef1c2b17ffcc2"
+      }
+    },
+    {
+      "name": "muse-marketplace",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "96f9f70d0c6d86ddd8102e3652223d1c102ca5fe3d034ce31d01f814a3dac094"
+      }
+    },
+    {
+      "name": "muse-meals",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "6522dbf0a7c9f648c4a5edc3d62fcf615f51368d2b9561d9461a07dee1d6b990"
+      }
+    },
+    {
+      "name": "muse-media",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "4d0006e2691d12f9466299e73c6d56dbb96070edcd7f9a2e6f2695767f6799ae"
+      }
+    },
+    {
+      "name": "muse-money",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "references/data-contract.md": "c2eba7203ee8a7cdcabfc31dc8325672959a83bf6fd2dfebfe31502f6f8c06af",
+        "scripts/audit-subscriptions.mjs": "e7a41addf7ea2f417d7efe32d4dc6a1debd3e0ab4209c3399622cb2e53a35e6e",
+        "SKILL.md": "a6843c7ec9f86529216920af0f0a9f932836a80368be3129dfb151f55d7e93e5"
+      }
+    },
+    {
+      "name": "muse-monitor",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "74c52f73c0caedd234713e82ebe89b6d728c449a9f3cfe49cb3cd99eb0a0431b"
+      }
+    },
+    {
+      "name": "muse-privacy",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "f41614ef7993f13ab7f11fbd637b65c39b6854bf1df7144338655a2d3dcce74a"
+      }
+    },
+    {
+      "name": "muse-refunds",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "64e438a983c45ccc4950d14c30208e1259361760c6d6d2bd5db70d5fc5494e06"
+      }
+    },
+    {
+      "name": "muse-research",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "26ce668044f9a6325e66c7f17eb88c2dd6eb5d8fc998afc6109d75b2d4e31375"
+      }
+    },
+    {
+      "name": "muse-shopping",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "e5858a26769e45331c0e01dee9847e9d03bd8b5be467200580228bddadaed872"
+      }
+    },
+    {
+      "name": "muse-social",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "f85f9d2cebf7afccf81c492acab5e9258f9290163bdd3436ccb70a01838d3d36"
+      }
+    },
+    {
+      "name": "muse-suite",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "references/routes.md": "163220b6e6e538f42926c03ec06bff543835a5b1af263b1784f7440b205e4d00",
+        "SKILL.md": "a18c1fe392f04c7376c378dea88a08ec0cd23608354a0e4a14aecd14ba0d5717"
+      }
+    },
+    {
+      "name": "muse-travel",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "3ead2a9e9c82f7e28a14e049c8083da2c44c9d3b5e6a5762389357cf200e937e"
+      }
+    },
+    {
+      "name": "muse-work",
+      "files": {
+        "references/contract.md": "50b297c875a5a1705e61e7d244208e56e75877bec36c9a6bc7aa5196c497d959",
+        "SKILL.md": "249c03e83c4083eca5fff9792993a2cd8a417b7b2e36d64094a054f0f525f056"
+      }
+    }
+  ]
+}

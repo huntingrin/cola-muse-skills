@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "method": "Active fixed costs only; annual total / 12 rounded once per currency. Not cash flow or confirmed savings.",
+  "by_currency": {
+    "CNY": {
+      "annual_cents": 42000,
+      "monthly_equivalent_cents": 3500
+    }
+  },
+  "items": [
+    {
+      "id": "music",
+      "name": "音乐服务",
+      "currency": "CNY",
+      "amount_cents": 18000,
+      "interval": "annual",
+      "status": "active",
+      "included": true,
+      "annual_cents": 18000
+    },
+    {
+      "id": "ai",
+      "name": "写作服务",
+      "currency": "CNY",
+      "amount_cents": 2000,
+      "interval": "monthly",
+      "status": "active",
+      "included": true,
+      "annual_cents": 24000
+    },
+    {
+      "id": "stream",
+      "name": "视频服务",
+      "currency": "CNY",
+      "amount_cents": 990,
+      "interval": "monthly",
+      "status": "cancelled",
+      "included": false,
+      "annual_cents": null
+    },
+    {
+      "id": "compute",
+      "name": "计算服务",
+      "currency": "CNY",
+      "amount_cents": 450,
+      "interval": "usage",
+      "status": "active",
+      "included": false,
+      "annual_cents": null
+    },
+    {
+      "id": "unknown",
+      "name": "存储服务",
+      "currency": "CNY",
+      "amount_cents": 500,
+      "interval": "monthly",
+      "status": "unknown",
+      "included": false,
+      "annual_cents": null
+    }
+  ],
+  "needs_review": [
+    "unknown"
+  ]
+}

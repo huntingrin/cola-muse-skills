@@ -1,0 +1,10 @@
+{
+  "start_date": "2026-10-01",
+  "days": 90,
+  "daily_minutes": 30,
+  "tasks": [
+    {"id":"review","title":"检查与发布准备","minutes":300,"depends_on":["build"]},
+    {"id":"outline","title":"明确需求和提纲","minutes":300},
+    {"id":"build","title":"制作项目","minutes":1800,"depends_on":["outline"]}
+  ]
+}

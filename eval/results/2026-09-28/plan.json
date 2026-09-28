@@ -1,0 +1,939 @@
+{
+  "schema_version": 1,
+  "total_minutes": 2400,
+  "capacity_minutes": 2700,
+  "buffer_minutes": 300,
+  "daily_budget": 30,
+  "days": [
+    {
+      "date": "2026-10-01",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "outline",
+          "title": "明确需求和提纲",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-06",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-07",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "build",
+          "title": "制作项目",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-12",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-13",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-19",
+      "minutes": 30,
+      "activities": [
+        {
+          "id": "review",
+          "title": "检查与发布准备",
+          "minutes": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-12-20",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-21",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-22",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-23",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-24",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-25",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-26",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-27",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-28",
+      "minutes": 0,
+      "activities": []
+    },
+    {
+      "date": "2026-12-29",
+      "minutes": 0,
+      "activities": []
+    }
+  ]
+}

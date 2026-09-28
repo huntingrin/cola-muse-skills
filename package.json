@@ -1,0 +1,16 @@
+{
+  "name": "cola-muse-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Practical, verifiable Muse-inspired workflows for Cola",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "manifest": "node scripts/build-manifest.mjs",
+    "install:cola": "node install.mjs install",
+    "doctor": "node install.mjs doctor"
+  },
+  "license": "MIT"
+}
